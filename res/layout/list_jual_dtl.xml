@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp" >
+
+    	<RelativeLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:padding="0px"
+     	>        
+        
+        <TextView
+            android:id="@+id/nojual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="no"
+            android:textColor="#dc6800"
+            android:textSize="@dimen/FontTabSmall"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/namabrg"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="left"
+            android:text="namabarang"
+            android:textColor="#000000"
+            android:textSize="@dimen/FontTabSmall" />
+
+        </RelativeLayout>
+        
+    	<RelativeLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:padding="0px"
+     	>
+
+    		<TextView
+    		    android:id="@+id/kodebrg"
+    		    android:layout_width="100sp"
+    		    android:layout_marginTop="2sp"
+    		    android:layout_height="wrap_content"
+    		    android:gravity="left"
+    		    android:text="kodebrg"
+    		    android:textColor="#000000"
+    		    android:textSize="13sp" />
+
+    		<TextView
+    		    android:id="@+id/jml"
+    		    android:layout_width="25sp"
+    		    android:layout_height="wrap_content"
+    		    android:layout_toRightOf="@+id/kodebrg"
+    		    android:gravity="right"
+    		    android:text="jml"
+    		    android:textColor="#0000ff"
+    		    android:textSize="@dimen/FontTabSmall" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/hargabrg"
+            android:gravity="right"
+            android:text="total"
+            android:textColor="#dc6800"
+            android:textSize="@dimen/FontTabSmall" />
+
+        <TextView
+            android:id="@+id/satuan"
+            android:layout_width="40sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_toRightOf="@+id/jml"
+            android:text="stn"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/hargabrg"
+            android:layout_width="75sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/satuan"
+            android:gravity="right"
+            android:text="hargabrg"
+            android:textColor="#006800"
+            android:textSize="@dimen/FontTabSmall" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    
+</LinearLayout>

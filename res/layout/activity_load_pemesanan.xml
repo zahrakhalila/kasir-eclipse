@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".LoadPemesanan" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/listViewLoadPsn"
+            android:layout_width="match_parent"
+            android:layout_height="191dp" >
+        </ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayoutloadpemesanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearlayout"
+        android:layout_below="@+id/linearlayout"
+        android:layout_weight="2.00" >
+
+        <Button
+            android:id="@+id/buttonLoadPesan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.37"
+            android:text="Load" />
+
+        <Button
+            android:id="@+id/buttonSimpanPesan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.37"
+            android:text="Simpan" />
+
+        <Button
+            android:id="@+id/buttonKembaliPesan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Kembali" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearlayoutloadpemesanan"
+        android:layout_below="@+id/linearlayoutloadpemesanan"
+        android:background="#4444aa11"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="0px" >
+
+            <TextView
+                android:id="@+id/nojual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="NO JUAL"
+                android:textColor="#dc6800"
+                android:textSize="@dimen/FontTabSmall"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tgljual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:text="TGL JUAL"
+                android:textColor="#000000"
+                android:textSize="@dimen/FontTabSmall" />
+
+            <TextView
+                android:id="@+id/nomormeja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="NO MEJA"
+                android:textColor="#0000ff"
+                android:textSize="@dimen/FontTabSmall" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="0px" >
+
+            <TextView
+                android:id="@+id/namabarang"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="left"
+                android:text="NILAI"
+                android:textColor="#000000"
+                android:textSize="@dimen/FontTabSmall" />
+
+            <TextView
+                android:id="@+id/hargabrg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:text="Bayar"
+                android:textColor="#dc6800"
+                android:textSize="@dimen/FontTabSmall" />
+
+            <TextView
+                android:id="@+id/pelanggan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="PELANGGAN"
+                android:textColor="#ff00ff"
+                android:textSize="@dimen/FontTabSmall" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewPesan"
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+        android:layout_alignLeft="@+id/linearlayout1"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/linearlayout1" >
+
+    </ListView>
+
+</RelativeLayout>

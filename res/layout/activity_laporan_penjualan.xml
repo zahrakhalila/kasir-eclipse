@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Penjualan" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:background="#4444aa11"
+        android:layout_below="@+id/textView2" 
+         >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="0px" >
+
+            <TextView
+                android:id="@+id/nojual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="NO JUAL"
+                android:textColor="#dc6800"
+                android:textSize="@dimen/FontTabSmall"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tgljual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:text="TGL JUAL"
+                android:textColor="#000000"
+                android:textSize="@dimen/FontTabSmall" />
+
+            <TextView
+                android:id="@+id/nomormeja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="NO MEJA"
+                android:textColor="#0000ff"
+                android:textSize="@dimen/FontTabSmall" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="0px" >
+
+            <TextView
+                android:id="@+id/namabarang"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="left"
+                android:text="NILAI"
+                android:textColor="#000000"
+                android:textSize="@dimen/FontTabSmall" />
+
+            <TextView
+                android:id="@+id/hargabrg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:text="BAYAR"
+                android:textColor="#dc6800"
+                android:textSize="@dimen/FontTabSmall" />
+
+            <TextView
+                android:id="@+id/pelanggan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="PELANGGAN"
+                android:textColor="#ff00ff"
+                android:textSize="@dimen/FontTabSmall" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ListViewBayarJual"
+        android:layout_width="wrap_content"
+        android:layout_height="355dp"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearlayout1" >
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+
+        <TextView
+            android:id="@+id/textViewTotNilai"
+            android:layout_width="125dp"
+            android:layout_height="42dp"
+            android:background="#FFE0E0"
+            android:contentDescription="15sp"
+            android:gravity="left|center_vertical"
+            android:text="Total:"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/buttonKembaliPenjualan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kembali" />
+
+        <TextView
+            android:id="@+id/textViewTotBayar"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="#FFE0E0"
+            android:gravity="right|center_vertical"
+            android:text="Total :"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

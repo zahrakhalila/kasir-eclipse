@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Pengguna" >
+
+    <TextView
+        android:id="@+id/kodebrg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_server" />
+    
+    <EditText
+        android:id="@+id/EditTextServerNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/kodebrg"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/kodebrg"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Isikan Nama Server" >
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/EditTextServerHost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditTextServerNama"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/EditTextServerNama"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Isikan IP Host Server"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/EditTextServerDatabase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditTextServerHost"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/EditTextServerHost"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Isikan Database Mysql" />
+
+    <EditText
+        android:id="@+id/EditTextServerLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditTextServerDatabase"
+        android:layout_alignRight="@+id/EditTextServerDatabase"
+        android:layout_below="@+id/EditTextServerDatabase"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Isikan Login Mysql" />
+
+    <EditText
+        android:id="@+id/EditTextServerPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditTextServerLogin"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/EditTextServerLogin"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Isikan Password Mysql" />
+
+    <EditText
+        android:id="@+id/EditTextServerPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditTextServerPassword"
+        android:layout_alignRight="@+id/EditTextServerPassword"
+        android:layout_below="@+id/EditTextServerPassword"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Isikan Port Mysql"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/EditTextServerJenis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditTextServerPort"
+        android:layout_alignRight="@+id/EditTextServerPort"
+        android:layout_below="@+id/EditTextServerPort"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Isikan Jenis (M)ultisatuan/(S)ingle"
+        android:inputType="textCapCharacters" />
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditTextServerDatabase"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/EditTextServerJenis" >
+
+        <Button
+            android:id="@+id/buttonServerKeluar"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:text="Keluar" />
+
+        <Button
+            android:id="@+id/buttonServerSimpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewServer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout1" >
+    </ListView>
+
+</RelativeLayout>

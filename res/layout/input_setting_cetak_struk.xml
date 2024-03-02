@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <EditText
+        android:id="@+id/ket1Input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Isikan Keterangan Ke-1"
+        android:inputType="text"
+        android:textSize="@dimen/FontTabSmall" />
+
+    <EditText
+        android:id="@+id/ket2Input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Isikan Keterangan Ke-2"
+        android:inputType="text"
+        android:textSize="@dimen/FontTabSmall" />
+
+    <EditText
+        android:id="@+id/ket3Input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Isikan Keterangan Ke-3"
+        android:inputType="text"
+        android:textSize="@dimen/FontTabSmall" />
+
+    <EditText
+        android:id="@+id/ket4Input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Isikan Keterangan Ke-4"
+        android:inputType="text"
+        android:textSize="@dimen/FontTabSmall" />
+
+    <EditText
+        android:id="@+id/ket5Input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Isikan Keterangan Ke-5"
+        android:inputType="text"
+        android:textSize="@dimen/FontTabSmall" />
+ 
+</LinearLayout>

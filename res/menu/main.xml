@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/login" android:title="Login"></item>
+    <item android:id="@+id/logout" android:title="Logout"></item>
+    <item android:id="@+id/koneksi" android:title="Setting dan Parameter"></item>
+    <item android:id="@+id/hakaksespengguna" android:title="Hak Akses Pengguna"></item>
+    <item android:id="@+id/pengguna" android:title="Pengguna"></item>
+    <item android:id="@+id/pelanggan" android:title="Pelanggan"></item>
+    <item android:id="@+id/loadbarang" android:title="Load Barang"></item>
+    <item android:id="@+id/barang" android:title="Barang"></item>
+    <item android:id="@+id/penjualan" android:title="Penjualan"></item>
+    <item android:id="@+id/laporanpiutang" android:title="Laporan Piutang"></item>   
+    <item android:id="@+id/laporanjual" android:title="Laporan Penjualan"></item>   
+    <item android:id="@+id/laporanpendapatan" android:title="Laporan Pendapatan"></item>   
+    <item android:id="@+id/keluar" android:title="Keluar"></item>
+
+</menu>

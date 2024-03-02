@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <EditText
+        android:id="@+id/namaInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Isikan Nama Resto"
+        android:inputType="textCapCharacters"
+        android:textSize="@dimen/FontTabSmall" />
+    
+    <EditText
+        android:id="@+id/alamatInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Isikan Alamat Resto"
+        android:inputType="text"
+        android:textSize="@dimen/FontTabSmall" />
+
+    <EditText
+        android:id="@+id/telpInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Isikan Telp Resto"
+        android:inputType="text"
+        android:textSize="@dimen/FontTabSmall" >
+
+        <requestFocus />
+    </EditText>
+ 
+</LinearLayout>

@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".LaporanPenjualanDetail" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonCetakPenjualanDetail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textViewDaftarPlg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_world" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textViewNoJual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.16"
+                android:text="No :"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/textViewTotalLapPenjDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.16"
+                android:gravity="right"
+                android:text="Nilai:"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4444aa11"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="0px" >
+
+                <TextView
+                    android:id="@+id/nojual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="No"
+                    android:textColor="#dc6800"
+                    android:textSize="@dimen/FontTabSmall"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/namabrg"
+                    android:layout_width="200sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="Nama Barang"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/FontTabSmall" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="0px" >
+
+                <TextView
+                    android:id="@+id/kodebrg"
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Kode Brg"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/FontTabSmall" />
+
+                <TextView
+                    android:id="@+id/jml"
+                    android:layout_width="25sp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/kodebrg"
+                    android:gravity="right"
+                    android:text="Jml"
+                    android:textColor="#0000ff"
+                    android:textSize="@dimen/FontTabSmall" />
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/hargabrg"
+                    android:gravity="right"
+                    android:text="Total (Rp)"
+                    android:textColor="#dc6800" />
+
+                <TextView
+                    android:id="@+id/satuan"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@+id/jml"
+                    android:text="Stn"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/hargabrg"
+                    android:layout_width="75sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/satuan"
+                    android:gravity="right"
+                    android:text="Harga (Rp)"
+                    android:textColor="#006800"
+                    android:textSize="@dimen/FontTabSmall" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listViewDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="334dp"
+            android:layout_weight="1.16" >
+        </ListView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonCetakPenjualanDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_toRightOf="@+id/buttonKembaliPenjualanDetail"
+        android:layout_weight="0.55"
+        android:text="Cetak" />
+
+    <Button
+        android:id="@+id/buttonKembaliPenjualanDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonCetakPenjualanDetail"
+        android:layout_alignBottom="@+id/buttonCetakPenjualanDetail"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_weight="0.47"
+        android:text="Kembali" />
+
+</RelativeLayout>

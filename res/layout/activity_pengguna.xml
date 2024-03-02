@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PenggunaActivity" >
+
+    <TextView
+        android:id="@+id/textViewDaftarPlg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/hello_world" />
+
+    <EditText
+        android:id="@+id/editTextPenggunaUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewDaftarPlg"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Isikan Nama"
+        android:textColor="#dc6800" >
+
+        <requestFocus />
+    	</EditText>
+
+    <EditText
+        android:id="@+id/editTextPenggunaPasword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTextPenggunaUser"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Isikan Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editTextPenggunaLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTextPenggunaPasword"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Isikan Level Pengguna (Admin/Kasir)"
+        android:textColor="#0000ff" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTextPenggunaLevel"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/buttonPenggunaKeluar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="Keluar" />
+
+        <Button
+            android:id="@+id/buttonPenggunaSimpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="Simpan" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewPengguna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout2" >
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:background="#4444aa11"
+        android:layout_below="@+id/linearLayout1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="0px" >
+
+            <TextView
+                android:id="@+id/nojual"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Nama"
+                android:textColor="#dc6800"
+                android:textSize="@dimen/FontMedium"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="0px" >
+
+            <TextView
+                android:id="@+id/namabarang"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Password"
+                android:textColor="#000000"
+                android:textSize="@dimen/FontTabSmall" />
+
+            <TextView
+                android:id="@+id/subitems1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/namabarang"
+                android:gravity="right"
+                android:text="Level"
+                android:textColor="#0000ff"
+                android:textSize="@dimen/FontTabSmall" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
